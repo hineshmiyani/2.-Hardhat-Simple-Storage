@@ -16,7 +16,7 @@ describe("SimpleStorage", function () {
     const currentValue = await simpleStorage.retrieve();
 
     // assert
-    assert.equal(currentValue.toString(), currentValue);
+    assert.equal(currentValue.toString(), expectedValue);
 
     // expect
     // expect(currentValue.toString()).to.equal(expectedValue);
@@ -30,7 +30,7 @@ describe("SimpleStorage", function () {
     const currentValue = await simpleStorage.retrieve();
 
     // assert
-    assert.equal(currentValue.toString(), currentValue);
+    assert.equal(currentValue.toString(), expectedValue);
   });
 
   it("Should pure function return 4", async function () {
